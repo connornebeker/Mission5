@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Price Checker";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <h2 class="display-6">Want to take your VicRoy count to the next level? I can help.</h2>
+    <h3 class="display-7">Use the price calculator below to see how much it will cost.</h3>
+</div><br/><br/>
+
+<div id="calculator" style="justify-content: center;" class="container">
+    <label for="hours" id="hoursLabel">Enter the number of hours you need Fortnite Tutoring:</label>
+    <input id="hours" type="number" /><br/>
+    <label for="rate" id="rateLabel">My hourly rate:</label>
+    <input id="rate" type="number" value="50" readonly/><br/><br/>
+    <label for="price" id="priceOutput">Total Price:</label>
+    <input id="price" readonly/><br/><br/>
+    
+    <input id="calculate" type="button" value="Calculate"><br/><br/>
+    <p>Each win takes approximately 20 minutes, so you will also come away with</p>
+    <input id="wins" readonly/>
+</div>
+
